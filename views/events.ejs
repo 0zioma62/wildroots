@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<main>
+  <section class="page-hero">
+    <h1>Events</h1>
+    <p>Discover what is happening at WildRoots throughout the year</p>
+  </section>
+
+  <section class="events-section">
+    <div class="events-filters">
+      <select id="year-select">
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026" selected>2026</option>
+      </select>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="wildlife_festival">Wildlife Festival</button>
+        <button class="filter-btn" data-category="conservation_workshop">Conservation Workshop</button>
+        <button class="filter-btn" data-category="night_safari">Night Safari</button>
+        <button class="filter-btn" data-category="guest_talk">Guest Talk</button>
+        <button class="filter-btn" data-category="family_activity">Family Activity</button>
+      </div>
+    </div>
+
+    <div id="events-grid" class="cards-grid"></div>
+  </section>
+</main>
+
+<script src="/js/events.js"></script>
+
+<%- include('partials/footer') %>

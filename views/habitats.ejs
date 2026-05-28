@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<main>
+  <section class="page-hero">
+    <h1>Our Habitats</h1>
+    <p>Explore three incredible wildlife habitats</p>
+  </section>
+
+  <section class="habitats-list">
+    <% habitats.forEach(habitat => { %>
+      <a href="/habitats/<%= habitat.id %>" class="habitat-card">
+        <h2><%= habitat.name %></h2>
+        <p><%= habitat.description %></p>
+        <span class="btn-primary">Explore</span>
+      </a>
+    <% }) %>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to WildRoots</h1>
+      <p>Discover three incredible wildlife habitats — Rainforest Canopy, Savannah Plains and Reptile World</p>
+      <a href="/habitats" class="btn-primary">Explore Habitats</a>
+      <a href="/events" class="btn-secondary">View Events</a>
+    </div>
+  </section>
+
+  <!-- Opening Times Section -->
+  <section class="opening-times">
+    <h2>🕘 Opening Times</h2>
+    <div class="times-card">
+      <p class="times-big">Open Every Day</p>
+      <p class="times-big">9am — 6pm</p>
+      <p>365 days a year, rain or shine!</p>
+    </div>
+  </section>
+
+  <!-- Habitats Preview Section -->
+  <section class="habitats-preview">
+    <h2>Explore Our Habitats</h2>
+    <div class="cards-grid">
+      <a href="/habitats/1" class="card">
+        <h3>🌿 Rainforest Canopy</h3>
+        <p>Explore the lush layers of a tropical rainforest</p>
+      </a>
+      <a href="/habitats/2" class="card">
+        <h3>🦁 Savannah Plains</h3>
+        <p>Experience the vast open grasslands of Africa</p>
+      </a>
+      <a href="/habitats/3" class="card">
+        <h3>🐍 Reptile World</h3>
+        <p>Come face to face with the ancient world of reptiles</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <h2>🔍 Search the Park</h2>
+    <input type="text" id="search-input" placeholder="Search experiences, exhibits...">
+    <div id="search-results"></div>
+  </section>
+</main>
+
+<script src="/js/search.js"></script>
+
+<%- include('partials/footer') %>
