@@ -1,12 +1,12 @@
 <%- include('partials/header') %>
 
 <main>
-  <section class="page-hero">
+  <div class="page-hero">
     <h1>Safari Spotter</h1>
     <p>Match the animals of the Savannah Plains — flip the cards to find the pairs!</p>
-  </section>
+  </div>
 
-  <section class="activity-section">
+  <div class="activity-section">
     <div class="game-info">
       <p>Attempts: <span id="attempts">0</span></p>
       <p>Matches: <span id="matches">0</span></p>
@@ -16,7 +16,7 @@
     <div id="win-message" class="win-message hidden">
       🎉 Well done! You matched all the animals in <span id="final-attempts"></span> attempts!
     </div>
-  </section>
+  </div>
 </main>
 
 <script src="/js/activity.js"></script>

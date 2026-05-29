@@ -1,23 +1,23 @@
 <%- include('partials/header') %>
 
 <main>
-  <section class="page-hero">
+  <div class="page-hero">
     <h1><%= event.title %></h1>
     <% if (isPast) { %>
       <span class="badge past">This event has already taken place</span>
     <% } else { %>
       <span class="badge upcoming">Upcoming Event</span>
     <% } %>
-  </section>
+    </div>
 
-  <section class="event-detail-section">
+  <div class="event-detail-div">
     <div class="event-detail-card">
       <p class="event-date">📅 <%= event.event_date %></p>
       <p class="event-category">🏷️ <%= event.category.replace(/_/g, ' ') %></p>
       <p class="event-description"><%= event.description %></p>
       <a href="/events" class="btn-secondary">← Back to Events</a>
     </div>
-  </section>
+  </div>
 </main>
 
 <%- include('partials/footer') %>

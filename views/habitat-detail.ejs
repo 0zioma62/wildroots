@@ -1,12 +1,12 @@
 <%- include('partials/header') %>
 
 <main>
-  <section class="page-hero">
+  <div class="page-hero">
     <h1><%= habitat.name %></h1>
     <p><%= habitat.description %></p>
-  </section>
+  </div>
 
-  <section class="experiences-section">
+  <div class="experiences-section">
     <h2>Experiences & Exhibits</h2>
     <div id="experiences-grid" class="cards-grid">
       <% experiences.forEach(exp => { %>
@@ -17,11 +17,11 @@
         </div>
       <% }) %>
     </div>
-  </section>
+  </div>
 
-  <section class="back-link">
+  <div class="back-link">
     <a href="/habitats" class="btn-secondary">← Back to Habitats</a>
-  </section>
+  </div>
 </main>
 
 <%- include('partials/footer') %>
