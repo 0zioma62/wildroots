@@ -51,5 +51,7 @@ router.get('/events/:id', async (req, res) => {
   const isPast = event.event_date < today;
   res.render('event-detail', { event, isPast });
 });
-
+router.get('/search', (req, res) => {
+  res.render('search');
+});
 export default router;
